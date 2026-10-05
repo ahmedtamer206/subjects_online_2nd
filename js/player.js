@@ -323,10 +323,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------------------------------------------------------
     if (!url) { showError(); return; }
 
+    // Detect if URL is external (GitHub Releases, etc.)
+    const isExternalUrl = url.startsWith('http://') || url.startsWith('https://');
+
     const isMobile = window.innerWidth < 640;
     const controlsList = isMobile
         ? ['play-large', 'play', 'progress', 'current-time', 'fullscreen']
         : ['play-large', 'play', 'rewind', 'fast-forward', 'progress', 'current-time', 'duration', 'mute', 'volume', 'settings', 'pip', 'fullscreen'];
+
+    // For external URLs, set the src directly on the video element first
+    // This avoids Plyr's multi-source setup which breaks with 302 redirects
+    if (isExternalUrl) {
+        videoEl.removeAttribute('crossorigin');
+        videoEl.src = url;
+    }
 
     const player = new Plyr(videoEl, {
         controls: controlsList,
@@ -337,15 +347,18 @@ document.addEventListener('DOMContentLoaded', () => {
         tooltips: { controls: true, seek: true }
     });
 
-    player.source = {
-        type: 'video',
-        title: title,
-        sources: [
-            { src: url, type: 'video/mp4', size: 1080 },
-            { src: url, type: 'video/mp4', size: 720 },
-            { src: url, type: 'video/mp4', size: 480 }
-        ]
-    };
+    // For local files, use Plyr's source setter; for external, the src is already set
+    if (!isExternalUrl) {
+        player.source = {
+            type: 'video',
+            title: title,
+            sources: [
+                { src: url, type: 'video/mp4', size: 1080 },
+                { src: url, type: 'video/mp4', size: 720 },
+                { src: url, type: 'video/mp4', size: 480 }
+            ]
+        };
+    }
 
     const storageKey = `so_vid_progress_${encodeURIComponent(url)}`;
 

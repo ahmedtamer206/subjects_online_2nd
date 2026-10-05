@@ -1,6 +1,12 @@
 /* shared-nav.js — Injects the shared navbar and highlights the current page */
 (function () {
-    const currentPage = window.location.pathname.split('/').pop() || 'dashboard.html';
+    // Normalize current page to always have .html (handles Cloudflare Pages clean URLs without .html and trailing slashes)
+    const rawPath = window.location.pathname.replace(/\/+$/, '');
+    let pageName = rawPath.split('/').pop() || 'dashboard.html';
+    if (!pageName.includes('.')) {
+        pageName += '.html';
+    }
+    const currentPage = pageName;
 
     const userName = localStorage.getItem('subjectsOnlineName') || 'Student';
     const initial = userName[0].toUpperCase();
@@ -103,7 +109,7 @@
     const avatarContent = avatarImage
         ? `<img src="${avatarImage}" alt="User Avatar" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">`
         : initial;
-    const isDashboardPage = (currentPage === 'dashboard.html' || currentPage === '' || currentPage === '/' || currentPage === 'index.html');
+    const isDashboardPage = (currentPage === 'dashboard.html' || currentPage === 'dashboard' || currentPage === '' || currentPage === '/' || currentPage === 'index.html' || currentPage === 'index');
 
     const dashboardNavHTML = `
             <a href="#wi-section" title="What's Inside" class="pill-nav-item pill-nav-wi" onclick="const el=document.getElementById('wi-section');if(el){el.scrollIntoView({behavior:'smooth'});return false;}">
@@ -651,7 +657,7 @@
     }
 
     // Inject footer only on dashboard
-    if (currentPage === 'dashboard.html' || currentPage === '' || currentPage === '/') {
+    if (isDashboardPage) {
         document.body.insertAdjacentHTML('beforeend', footerHTML);
     }
 
@@ -959,7 +965,7 @@
     // ── 10. INNER PAGE NAVBAR (always visible on non-dashboard pages) ──────────
     function initInnerPageNav() {
         // On dashboard page: return early
-        if (currentPage === 'dashboard.html' || currentPage === '' || currentPage === '/') return;
+        if (isDashboardPage) return;
 
         const logoEl = document.getElementById('shared-nav-logo');
         const libBtn = document.getElementById('library-nav-btn');

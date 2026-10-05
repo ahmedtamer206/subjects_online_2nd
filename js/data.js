@@ -17,7 +17,7 @@ const MATERIALS = [
                     num: 1, title: "", time: "",
                     weeks: [
                         { num: 1, title: " ", lectures: [
-                        { id: 101, title: "Lect 1 Dr.Zatout", type: "video", url: "materials/Videos/Accounting/Lect1_Dr.Zatout.mp4" },
+                        { id: 101, title: "Lect 1 Dr.Zatout", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1_Dr.Zatout.mp4" },
 
                         ] },
                         { num: 2, title: " ", lectures: [] },
@@ -101,7 +101,7 @@ const MATERIALS = [
                         {
                             num: 1, title: "", lectures: [
                                 // { id: 201, title: "", type: "pdf", url: "" },
-                                { id: 202, title: "Lect1", type: "video", url: "materials/Videos/Stat/Lect1_(Dr.Mona).mp4" }
+                                { id: 202, title: "Lect1", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1_.Dr.Mona.mp4" }
 
                             ]
                         },
@@ -178,12 +178,12 @@ const MATERIALS = [
                         {
                             num: 1, title: "", lectures: [
                                 // { id: 301, title: "Lect1(Dr.Saeed)'Handwriting'", type: "pdf", url: "materials/Pdfs/Business/First_Term/Chapter_1/week1/CA_lect_1_(Dr.Saeed)_'handwriting'.pdf" },
-                                { id: 302, title: "Lect 1 (Dr.Ahmed Saeed)", type: "video", url: "materials/Videos/Public finance/Lect1 (Dr.Ahmed Saeed).mp4" }
+                                { id: 302, title: "Lect 1 (Dr.Ahmed Saeed)", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1_.Dr.Ahmed.Saeed..mp4" }
                             ]
                         },
                         {
                             num: 2, title: "", lectures: [
-                                { id: 303, title: "Lect 2 (Dr.Ahmed Saeed)", type: "video", url: "materials/Videos/Public finance/Lect2(Dr.Ahmed Saeed).mp4" }
+                                { id: 303, title: "Lect 2 (Dr.Ahmed Saeed)", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect2_.Dr.Ahmed.Saeed..mp4" }
 
                             ]
                         },

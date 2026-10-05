@@ -17,8 +17,11 @@
     if (!isStandalone) return;
 
     const uid = localStorage.getItem('subjectsOnlineUID');
-    const path = window.location.pathname;
-    const page = path.split('/').pop() || '';
+    const cleanPath = path.replace(/\/+$/, '');
+    let page = cleanPath.split('/').pop() || '';
+    if (page && !page.includes('.')) {
+      page += '.html';
+    }
 
     // Base path = everything before the filename
     // e.g. /Subjects-Online-2/  (handles GitHub Pages subdirectories)
