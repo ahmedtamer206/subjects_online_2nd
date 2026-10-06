@@ -101,7 +101,7 @@ const MATERIALS = [
                     weeks: [
                         {
                             num: 1, title: "", lectures: [
-                                // { id: 201, title: "", type: "pdf", url: "" },
+                                { id: 201, title: "Lect1", type: "pdf", url: "materials/Pdfs/First Term/Stat/Ch1/week1/Lect1_Stat_DrMona.pdf" },
                                 { id: 202, title: "Lect1", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1_.Dr.Mona.mp4" },
                                 { id: 203, title: "Lect2", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect2_Dr.Mona.mp4" },
 
