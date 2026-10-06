@@ -14,7 +14,7 @@ const MATERIALS = [
         content: {
             chapters: [
                 {
-                    num: 1, title: "", time: "",
+                    num: 1, title: "Ch1", time: "",
                     weeks: [
                         { num: 1, title: " ", lectures: [
                         { id: 101, title: "Lect 1 Dr.Zatout", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1_Dr.Zatout.mp4" },
@@ -38,7 +38,8 @@ const MATERIALS = [
                     weeks: [
                         {
                             num: 1, title: "", lectures: [
-                                { id: 101, title: "Quiz 1", type: "pdf", url: "materials/Pdfs/First Term/Accounting/Chapter1/week1/Quiz 1 Accounting.pdf" },
+                                { id: 101, title: "Quiz 1", type: "pdf", url: "materials/Pdfs/First Term/Accounting/Quizzes/Quiz 1 Accounting.pdf" },
+                                { id: 102, title: "Quiz 2", type: "pdf", url: "materials/Pdfs/First Term/Accounting/Quizzes/Quiz 2 Accounting.pdf" },
 
                             ]
                         },
@@ -101,7 +102,8 @@ const MATERIALS = [
                         {
                             num: 1, title: "", lectures: [
                                 // { id: 201, title: "", type: "pdf", url: "" },
-                                { id: 202, title: "Lect1", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1_.Dr.Mona.mp4" }
+                                { id: 202, title: "Lect1", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1_.Dr.Mona.mp4" },
+                                { id: 203, title: "Lect2", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect2_Dr.Mona.mp4" },
 
                             ]
                         },
@@ -177,13 +179,12 @@ const MATERIALS = [
                     weeks: [
                         {
                             num: 1, title: "", lectures: [
-                                // { id: 301, title: "Lect1(Dr.Saeed)'Handwriting'", type: "pdf", url: "materials/Pdfs/Business/First_Term/Chapter_1/week1/CA_lect_1_(Dr.Saeed)_'handwriting'.pdf" },
-                                { id: 302, title: "Lect 1 (Dr.Ahmed Saeed)", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1_.Dr.Ahmed.Saeed..mp4" }
+                                { id: 302, title: "Lect 1", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1_Dr.Ahmed.Saeed.mp4" }
                             ]
                         },
                         {
                             num: 2, title: "", lectures: [
-                                { id: 303, title: "Lect 2 (Dr.Ahmed Saeed)", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect2_.Dr.Ahmed.Saeed..mp4" }
+                                { id: 303, title: "Lect 2", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect2_Dr.Ahmed.Saeed.mp4" }
 
                             ]
                         },
@@ -254,9 +255,15 @@ const MATERIALS = [
         content: {
             chapters: [
                 {
-                    num: 1, title: "", time: "",
+                    num: 1, title: "Ch1", time: "...",
                     weeks: [
-                        { num: 1, title: "", lectures: [] },
+                        { num: 1, title: "", lectures: [
+                        { id: 101, title: "Lect 1", type: "pdf", url: "materials/Pdfs/First Term/Production/Chapter1/week1/Production Operations lec 1.pdf" },
+                        { id: 102, title: "Lect 1", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1_Production.mp4" },
+                        { id: 103, title: "Lect 2", type: "pdf", url: "materials/Pdfs/First Term/Production/Chapter1/week1/Production Operations lec 2.pdf" },
+                        { id: 104, title: "Lect 3", type: "pdf", url: "materials/Pdfs/First Term/Production/Chapter1/week1/Production Operations lec 3.pdf" },
+
+                        ] },
                         { num: 2, title: "", lectures: [] },
                         { num: 3, title: " ", lectures: [] }
                     ]
@@ -327,7 +334,10 @@ const MATERIALS = [
                 {
                     num: 1, title: "", time: "",
                     weeks: [
-                        { num: 1, title: "", lectures: [] },
+                        { num: 1, title: "", lectures: [
+                                { id: 502, title: "Lect1&2", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1.2_Eco.mp4" },
+
+                        ] },
                         { num: 2, title: " ", lectures: [] },
                         { num: 3, title: " ", lectures: [] }
                     ]
@@ -467,9 +477,14 @@ const MATERIALS = [
         content: {
             chapters: [
                 {
-                    num: 1, title: "", time: "",
+                    num: 1, title: "Ch1", time: "...",
                     weeks: [
-                        { num: 1, title: "", lectures: [] },
+                        { num: 1, title: "", lectures: [
+                        { id: 101, title: "Lect 1", type: "pdf", url: "materials/Pdfs/First Term/MIS/Chapter1/week1/MIS Lec 1.pdf" },
+                        { id: 102, title: "Lect 1", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Intro.MIS.mp4" },
+                        { id: 103, title: "Lect 2", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect2-MIS.mp4" },
+
+                        ] },
                         { num: 2, title: "", lectures: [] },
                         { num: 3, title: "", lectures: [] }
                     ]
