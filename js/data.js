@@ -4,545 +4,726 @@
    =================================================== */
 
 const MATERIALS = [
-    {
-        id: 's1',
-        title: 'Intermediate Accounting (1)',
-        icon: '🧮',
-        color: '#dbeafe',
-        accent: '#2563eb',
-        doctor: 'Dr. Mahmoud Zatout & Dr. Saeed Abu El-Reesh',
-        content: {
-            chapters: [
+  {
+    id: "s1",
+    title: "Intermediate Accounting (1)",
+    icon: "🧮",
+    color: "#dbeafe",
+    accent: "#2563eb",
+    doctor: "Dr. Mahmoud Zatout & Dr. Saeed Abu El-Reesh",
+    content: {
+      chapters: [
+        {
+          num: 1,
+          title: "Ch1",
+          time: "",
+          weeks: [
+            {
+              num: 1,
+              title: " ",
+              lectures: [
                 {
-                    num: 1, title: "Ch1", time: "",
-                    weeks: [
-                        { num: 1, title: " ", lectures: [
-                        { id: 101, title: "Lect 1 Dr.Zatout", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1_Dr.Zatout.mp4" },
-
-                        ] },
-                        { num: 2, title: " ", lectures: [] },
-                        { num: 3, title: " ", lectures: [] }
-                    ]
+                  id: 101,
+                  title: "Lect 1 ",
+                  type: "video",
+                  url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1_Dr.Zatout.mp4",
+                },
+              ],
+            },
+            { num: 2, title: " ", lectures: [] },
+            { num: 3, title: " ", lectures: [] },
+          ],
+        },
+        {
+          num: 2,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: " ", lectures: [] },
+            { num: 2, title: "Week 5: ", lectures: [] },
+          ],
+        },
+      ],
+      quizzes: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            {
+              num: 1,
+              title: "",
+              lectures: [
+                {
+                  id: 101,
+                  title: "Quiz 1",
+                  type: "pdf",
+                  url: "materials/Pdfs/First Term/Accounting/Quizzes/Quiz 1 Accounting.pdf",
                 },
                 {
-                    num: 2, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: " ", lectures: [] },
-                        { num: 2, title: "Week 5: ", lectures: [] }
-                    ]
-                }
-            ],
-            quizzes: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        {
-                            num: 1, title: "", lectures: [
-                                { id: 101, title: "Quiz 1", type: "pdf", url: "materials/Pdfs/First Term/Accounting/Quizzes/Quiz 1 Accounting.pdf" },
-                                { id: 102, title: "Quiz 2", type: "pdf", url: "materials/Pdfs/First Term/Accounting/Quizzes/Quiz 2 Accounting.pdf" },
-
-                            ]
-                        },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            sections: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        {
-                            num: 1, title: "", lectures: [
-                            ]
-                        },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            summaries: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            qa: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            finalReview: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] }
-                    ]
-                }
-            ]
-        }
+                  id: 102,
+                  title: "Quiz 2",
+                  type: "pdf",
+                  url: "materials/Pdfs/First Term/Accounting/Quizzes/Quiz 2 Accounting.pdf",
+                },
+              ],
+            },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      sections: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            {
+              num: 1,
+              title: "",
+              lectures: [],
+            },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      summaries: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      qa: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      finalReview: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [{ num: 1, title: "", lectures: [] }],
+        },
+      ],
     },
-    {
-        id: 's2',
-        title: 'Descriptive Statistics',
-        icon: '📊',
-        color: '#ede9fe',
-        accent: '#7c3aed',
-        doctor: ' Dr. Mona El-Baily & Dr. Hany Khedr',
-        content: {
-            chapters: [
+  },
+  {
+    id: "s2",
+    title: "Descriptive Statistics",
+    icon: "📊",
+    color: "#ede9fe",
+    accent: "#7c3aed",
+    doctor: " Dr. Mona El-Baily & Dr. Hany Khedr",
+    content: {
+      chapters: [
+        {
+          num: 1,
+          title: "Ch1",
+          time: "",
+          weeks: [
+            {
+              num: 1,
+              title: "",
+              lectures: [
                 {
-                    num: 1, title: "Ch1", time: "",
-                    weeks: [
-                        {
-                            num: 1, title: "", lectures: [
-                                { id: 201, title: "Lect1", type: "pdf", url: "materials/Pdfs/First Term/Stat/Ch1/week1/Lect1_Stat_DrMona.pdf" },
-                                { id: 202, title: "Lect1", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1_.Dr.Mona.mp4" },
-                                { id: 203, title: "Lect2", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect2_Dr.Mona.mp4" },
-
-                            ]
-                        },
-                        // { num: 2, title: "", lectures: [] },
-                        // { num: 3, title: "", lectures: [] }
-                    ]
+                  id: 201,
+                  title: "Lect1",
+                  type: "pdf",
+                  url: "materials/Pdfs/First Term/Stat/Ch1/week1/Lect1_Stat_DrMona.pdf",
                 },
-                // {
-                //     num: 2, title: "Descriptive Statistics — Dispersion & Probability", time: "2h 45m",
-                //     weeks: [
-                //         { num: 1, title: " Dispersion, Variance & Standard Deviation", lectures: [] },
-                //         { num: 2, title: "Week 5: Correlation & Regression Basics", lectures: [] }
-                //     ]
-                // }
-            ],
-            quizzes: [
                 {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            sections: [
+                  id: 202,
+                  title: "Lect1",
+                  type: "video",
+                  url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1_.Dr.Mona.mp4",
+                },
                 {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            summaries: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            qa: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            finalReview: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] }
-                    ]
-                }
-            ]
-        }
+                  id: 203,
+                  title: "Lect2",
+                  type: "video",
+                  url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect2_Dr.Mona.mp4",
+                },
+              ],
+            },
+            // { num: 2, title: "", lectures: [] },
+            // { num: 3, title: "", lectures: [] }
+          ],
+        },
+        // {
+        //     num: 2, title: "Descriptive Statistics — Dispersion & Probability", time: "2h 45m",
+        //     weeks: [
+        //         { num: 1, title: " Dispersion, Variance & Standard Deviation", lectures: [] },
+        //         { num: 2, title: "Week 5: Correlation & Regression Basics", lectures: [] }
+        //     ]
+        // }
+      ],
+      quizzes: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      sections: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      summaries: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      qa: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      finalReview: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [{ num: 1, title: "", lectures: [] }],
+        },
+      ],
     },
-    {
-        id: 's3',
-        title: 'Public Finance (1)',
-        icon: '💰',
-        color: '#fef9c3',
-        accent: '#ca8a04',
-        doctor: 'Dr. Samir Marie & Dr. Ahmed Saeed',
-        content: {
-            chapters: [
+  },
+  {
+    id: "s3",
+    title: "Public Finance (1)",
+    icon: "💰",
+    color: "#fef9c3",
+    accent: "#ca8a04",
+    doctor: "Dr. Samir Marie & Dr. Ahmed Saeed",
+    content: {
+      chapters: [
+        {
+          num: 1,
+          title: "Ch1",
+          time: "",
+          weeks: [
+            {
+              num: 1,
+              title: "",
+              lectures: [
                 {
-                    num: 1, title: "Ch1", time: "",
-                    weeks: [
-                        {
-                            num: 1, title: "", lectures: [
-                                { id: 302, title: "Lect 1", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1_Dr.Ahmed.Saeed.mp4" }
-                            ]
-                        },
-                        {
-                            num: 2, title: "", lectures: [
-                                { id: 303, title: "Lect 2", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect2_Dr.Ahmed.Saeed.mp4" }
-
-                            ]
-                        },
-                        // { num: 3, title: " ", lectures: [] }
-                    ]
+                  id: 302,
+                  title: "Lect 1",
+                  type: "video",
+                  url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1_Dr.Ahmed.Saeed.mp4",
                 },
-                // {
-                //     num: 2, title: "Public Finance — Public Revenues & Budget", time: "2h 45m",
-                //     weeks: [
-                //         { num: 1, title: " Taxes, Fees & Sovereign Revenues", lectures: [] },
-                //         { num: 2, title: "Week 5: General State Budget & Fiscal Balance", lectures: [] }
-                //     ]
-                // }
-            ],
-            quizzes: [
+              ],
+            },
+            {
+              num: 2,
+              title: "",
+              lectures: [
                 {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            sections: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            summaries: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            qa: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            finalReview: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] }
-                    ]
-                }
-            ]
-        }
+                  id: 303,
+                  title: "Lect 2",
+                  type: "video",
+                  url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect2_Dr.Ahmed.Saeed.mp4",
+                },
+              ],
+            },
+            // { num: 3, title: " ", lectures: [] }
+          ],
+        },
+        // {
+        //     num: 2, title: "Public Finance — Public Revenues & Budget", time: "2h 45m",
+        //     weeks: [
+        //         { num: 1, title: " Taxes, Fees & Sovereign Revenues", lectures: [] },
+        //         { num: 2, title: "Week 5: General State Budget & Fiscal Balance", lectures: [] }
+        //     ]
+        // }
+      ],
+      quizzes: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      sections: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      summaries: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      qa: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      finalReview: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [{ num: 1, title: "", lectures: [] }],
+        },
+      ],
     },
-    {
-        id: 's4',
-        title: 'Production Management',
-        icon: '🏭',
-        color: '#dcfce7',
-        accent: '#16a34a',
-        doctor: 'Dr. Heba Mostafa & Dr. Aya Rabie',
-        content: {
-            chapters: [
+  },
+  {
+    id: "s4",
+    title: "Production Management",
+    icon: "🏭",
+    color: "#dcfce7",
+    accent: "#16a34a",
+    doctor: "Dr. Heba Mostafa & Dr. Aya Rabie",
+    content: {
+      chapters: [
+        {
+          num: 1,
+          title: "Ch1",
+          time: "...",
+          weeks: [
+            {
+              num: 1,
+              title: "",
+              lectures: [
                 {
-                    num: 1, title: "Ch1", time: "...",
-                    weeks: [
-                        { num: 1, title: "", lectures: [
-                        { id: 101, title: "Lect 1", type: "pdf", url: "materials/Pdfs/First Term/Production/Chapter1/week1/Production Operations lec 1.pdf" },
-                        { id: 102, title: "Lect 1", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1_Production.mp4" },
-                        { id: 103, title: "Lect 2", type: "pdf", url: "materials/Pdfs/First Term/Production/Chapter1/week1/Production Operations lec 2.pdf" },
-                        { id: 104, title: "Lect 3", type: "pdf", url: "materials/Pdfs/First Term/Production/Chapter1/week1/Production Operations lec 3.pdf" },
-
-                        ] },
-                        { num: 2, title: "", lectures: [] },
-                        { num: 3, title: " ", lectures: [] }
-                    ]
+                  id: 101,
+                  title: "Lect 1",
+                  type: "pdf",
+                  url: "materials/Pdfs/First Term/Production/Chapter1/week1/Production Operations lec 1.pdf",
                 },
                 {
-                    num: 2, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: " ", lectures: [] },
-                        { num: 2, title: "Week 5: ", lectures: [] }
-                    ]
-                }
-            ],
-            quizzes: [
+                  id: 102,
+                  title: "Lect 1",
+                  type: "video",
+                  url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1_Production.mp4",
+                },
                 {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: " ", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            sections: [
+                  id: 103,
+                  title: "Lect 2",
+                  type: "pdf",
+                  url: "materials/Pdfs/First Term/Production/Chapter1/week1/Production Operations lec 2.pdf",
+                },
                 {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            summaries: [
+                  id: 104,
+                  title: "Lect 3",
+                  type: "pdf",
+                  url: "materials/Pdfs/First Term/Production/Chapter1/week1/Production Operations lec 3.pdf",
+                },
+              ],
+            },
+            { num: 2, title: "", lectures: [] },
+            { num: 3, title: " ", lectures: [] },
+          ],
+        },
+        {
+          num: 2,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: " ", lectures: [] },
+            { num: 2, title: "Week 5: ", lectures: [] },
+          ],
+        },
+      ],
+      quizzes: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: " ", lectures: [
                 {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            qa: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            finalReview: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] }
-                    ]
-                }
-            ]
-        }
+                  id: 4001,
+                  title: "Quiz 1",
+                  type: "pdf",
+                  url: "materials/Pdfs/First Term/Production/Quizzes/Quiz (1) Production .pdf",
+                },
+            ] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      sections: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      summaries: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      qa: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      finalReview: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [{ num: 1, title: "", lectures: [] }],
+        },
+      ],
     },
-    {
-        id: 's5',
-        title: 'Macroeconomic Theory',
-        icon: '📈',
-        color: '#fee2e2',
-        accent: '#dc2626',
-        doctor: 'Dr. El-Sayeda Kamal & Dr. Hanan Abdel-Khaleq',
-        content: {
-            chapters: [
+  },
+  {
+    id: "s5",
+    title: "Macroeconomic Theory",
+    icon: "📈",
+    color: "#fee2e2",
+    accent: "#dc2626",
+    doctor: "Dr. El-Sayeda Kamal & Dr. Hanan Abdel-Khaleq",
+    content: {
+      chapters: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            {
+              num: 1,
+              title: "",
+              lectures: [
                 {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [
-                                { id: 502, title: "Lect1&2", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1.2_Eco.mp4" },
-
-                        ] },
-                        { num: 2, title: " ", lectures: [] },
-                        { num: 3, title: " ", lectures: [] }
-                    ]
+                  id: 502,
+                  title: "Lect1&2",
+                  type: "video",
+                  url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect1.2_Eco.mp4",
                 },
-                {
-                    num: 2, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: " ", lectures: [] },
-                        { num: 2, title: "Week 5: ", lectures: [] }
-                    ]
-                }
-            ],
-            quizzes: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            sections: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            summaries: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            qa: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            finalReview: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] }
-                    ]
-                }
-            ]
-        }
+              ],
+            },
+            { num: 2, title: " ", lectures: [] },
+            { num: 3, title: " ", lectures: [] },
+          ],
+        },
+        {
+          num: 2,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: " ", lectures: [] },
+            { num: 2, title: "Week 5: ", lectures: [] },
+          ],
+        },
+      ],
+      quizzes: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      sections: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      summaries: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      qa: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      finalReview: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [{ num: 1, title: "", lectures: [] }],
+        },
+      ],
     },
-    {
-        id: 's6',
-        title: 'English Language (2)',
-        icon: '🌐',
-        color: '#cffafe',
-        accent: '#0891b2',
-        doctor: 'Dr. Samir Marie, Dr. Mohamed Zaeer & Dr. Walaa Nabil',
-        content: {
-            chapters: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] },
-                        { num: 3, title: "", lectures: [] }
-                    ]
-                },
-                // {
-                //     num: 2, title: "Business English — Translation & Communication", time: "2h 15m",
-                //     weeks: [
-                //         { num: 1, title: " Economic Translation Techniques", lectures: [] },
-                //         { num: 2, title: "Week 5: Business Correspondence & Reports", lectures: [] }
-                //     ]
-                // }
-            ],
-            quizzes: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            sections: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "ercises & Practice", lectures: [] },
-                        { num: 2, title: "slation Drills", lectures: [] }
-                    ]
-                }
-            ],
-            summaries: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            qa: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            finalReview: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] }
-                    ]
-                }
-            ]
-        }
+  },
+  {
+    id: "s6",
+    title: "English Language (2)",
+    icon: "🌐",
+    color: "#cffafe",
+    accent: "#0891b2",
+    doctor: "Dr. Samir Marie, Dr. Mohamed Zaeer & Dr. Walaa Nabil",
+    content: {
+      chapters: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+            { num: 3, title: "", lectures: [] },
+          ],
+        },
+        // {
+        //     num: 2, title: "Business English — Translation & Communication", time: "2h 15m",
+        //     weeks: [
+        //         { num: 1, title: " Economic Translation Techniques", lectures: [] },
+        //         { num: 2, title: "Week 5: Business Correspondence & Reports", lectures: [] }
+        //     ]
+        // }
+      ],
+      quizzes: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      sections: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "ercises & Practice", lectures: [] },
+            { num: 2, title: "slation Drills", lectures: [] },
+          ],
+        },
+      ],
+      summaries: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      qa: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      finalReview: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [{ num: 1, title: "", lectures: [] }],
+        },
+      ],
     },
-    {
-        id: 's7',
-        title: 'Management Information Systems',
-        icon: '💻',
-        color: '#fce7f3',
-        accent: '#db2777',
-        doctor: 'Dr. Heba Mostafa & Dr. Samar El-Tanbouly',
-        content: {
-            chapters: [
+  },
+  {
+    id: "s7",
+    title: "Management Information Systems",
+    icon: "💻",
+    color: "#fce7f3",
+    accent: "#db2777",
+    doctor: "Dr. Heba Mostafa & Dr. Samar El-Tanbouly",
+    content: {
+      chapters: [
+        {
+          num: 1,
+          title: "Ch1",
+          time: "...",
+          weeks: [
+            {
+              num: 1,
+              title: "",
+              lectures: [
                 {
-                    num: 1, title: "Ch1", time: "...",
-                    weeks: [
-                        { num: 1, title: "", lectures: [
-                        { id: 101, title: "Lect 1", type: "pdf", url: "materials/Pdfs/First Term/MIS/Chapter1/week1/MIS Lec 1.pdf" },
-                        { id: 102, title: "Lect 1", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Intro.MIS.mp4" },
-                        { id: 103, title: "Lect 2", type: "video", url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect2-MIS.mp4" },
-
-                        ] },
-                        { num: 2, title: "", lectures: [] },
-                        { num: 3, title: "", lectures: [] }
-                    ]
+                  id: 101,
+                  title: "Lect 1",
+                  type: "pdf",
+                  url: "materials/Pdfs/First Term/MIS/Chapter1/week1/MIS Lec 1.pdf",
                 },
-                // {
-                //     num: 2, title: "", time: "",
-                //     weeks: [
-                //         { num: 1, title: " Enterprise Applications & E-Commerce", lectures: [] },
-                //         { num: 2, title: "Week 5: Decision Support Systems & Business Intelligence", lectures: [] }
-                //     ]
-                // }
-            ],
-            quizzes: [
                 {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            sections: [
+                  id: 102,
+                  title: "Lect 1",
+                  type: "video",
+                  url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Intro.MIS.mp4",
+                },
                 {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            summaries: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            qa: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] },
-                        { num: 2, title: "", lectures: [] }
-                    ]
-                }
-            ],
-            finalReview: [
-                {
-                    num: 1, title: "", time: "",
-                    weeks: [
-                        { num: 1, title: "", lectures: [] }
-                    ]
-                }
-            ]
-        }
-    }
+                  id: 103,
+                  title: "Lect 2",
+                  type: "video",
+                  url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect2-MIS.mp4",
+                },
+              ],
+            },
+            { num: 2, title: "", lectures: [] },
+            { num: 3, title: "", lectures: [] },
+          ],
+        },
+        // {
+        //     num: 2, title: "", time: "",
+        //     weeks: [
+        //         { num: 1, title: " Enterprise Applications & E-Commerce", lectures: [] },
+        //         { num: 2, title: "Week 5: Decision Support Systems & Business Intelligence", lectures: [] }
+        //     ]
+        // }
+      ],
+      quizzes: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      sections: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      summaries: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      qa: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [
+            { num: 1, title: "", lectures: [] },
+            { num: 2, title: "", lectures: [] },
+          ],
+        },
+      ],
+      finalReview: [
+        {
+          num: 1,
+          title: "",
+          time: "",
+          weeks: [{ num: 1, title: "", lectures: [] }],
+        },
+      ],
+    },
+  },
 ];
 
 // Backward-compatibility aliases so older code accessing MATERIALS[dept] continues to work seamlessly
@@ -554,204 +735,226 @@ MATERIALS.customs = MATERIALS;
 MATERIALS.general = MATERIALS;
 
 const ESSAYS = [
-    // { id: 'es1', title: 'The Impact of Digital Transformation on Commerce Education', doctor: 'Dr. Mohamed Hassan', tag: 'Technology', tagColor: '#dbeafe', tagText: '#1d4ed8', desc: 'An in-depth analysis of how digital tools are reshaping the future of business and commerce education in Egypt and globally.', readTime: '8 min read', date: 'June 2025' },
-    // { id: 'es2', title: 'Behavioral Economics: Why Students Make Irrational Financial Decisions', doctor: 'Dr. Sara Khalil', tag: 'Economics', tagColor: '#dcfce7', tagText: '#15803d', desc: 'Exploring psychological biases that affect students and young adults in their everyday financial choices.', readTime: '6 min read', date: 'May 2025' },
-    // { id: 'es3', title: 'ESG Reporting: The New Frontier of Companies Accountability', doctor: 'Dr. Ahmed Nour', tag: 'Accounting', tagColor: '#ede9fe', tagText: '#6d28d9', desc: 'How environmental, social and governance disclosures are reshaping audit practices and investor relations worldwide.', readTime: '10 min read', date: 'April 2025' },
-    // { id: 'es4', title: 'Big Data Analytics: Opportunities for Statistics Students', doctor: 'Dr. Laila Mansour', tag: 'Statistics', tagColor: '#fef9c3', tagText: '#a16207', desc: 'A guide to how statistics students can leverage modern big data tools to enter the highest-paying data science roles.', readTime: '7 min read', date: 'March 2025' },
+  // { id: 'es1', title: 'The Impact of Digital Transformation on Commerce Education', doctor: 'Dr. Mohamed Hassan', tag: 'Technology', tagColor: '#dbeafe', tagText: '#1d4ed8', desc: 'An in-depth analysis of how digital tools are reshaping the future of business and commerce education in Egypt and globally.', readTime: '8 min read', date: 'June 2025' },
+  // { id: 'es2', title: 'Behavioral Economics: Why Students Make Irrational Financial Decisions', doctor: 'Dr. Sara Khalil', tag: 'Economics', tagColor: '#dcfce7', tagText: '#15803d', desc: 'Exploring psychological biases that affect students and young adults in their everyday financial choices.', readTime: '6 min read', date: 'May 2025' },
+  // { id: 'es3', title: 'ESG Reporting: The New Frontier of Companies Accountability', doctor: 'Dr. Ahmed Nour', tag: 'Accounting', tagColor: '#ede9fe', tagText: '#6d28d9', desc: 'How environmental, social and governance disclosures are reshaping audit practices and investor relations worldwide.', readTime: '10 min read', date: 'April 2025' },
+  // { id: 'es4', title: 'Big Data Analytics: Opportunities for Statistics Students', doctor: 'Dr. Laila Mansour', tag: 'Statistics', tagColor: '#fef9c3', tagText: '#a16207', desc: 'A guide to how statistics students can leverage modern big data tools to enter the highest-paying data science roles.', readTime: '7 min read', date: 'March 2025' },
 ];
 
 // Shared helpers
 function getDeptKey(deptText) {
-    return 'general';
+  return "general";
 }
 
 function getFavorites() {
-    try {
-        return JSON.parse(localStorage.getItem('soFavorites') || '[]');
-    } catch {
-        return [];
-    }
+  try {
+    return JSON.parse(localStorage.getItem("soFavorites") || "[]");
+  } catch {
+    return [];
+  }
 }
 
 function saveFavorites(favs) {
-    try {
-        localStorage.setItem('soFavorites', JSON.stringify(favs));
-        window.dispatchEvent(new CustomEvent('so-fav-changed', { detail: favs }));
-    } catch (e) {
-        console.warn('Failed to save favorites:', e);
-    }
+  try {
+    localStorage.setItem("soFavorites", JSON.stringify(favs));
+    window.dispatchEvent(new CustomEvent("so-fav-changed", { detail: favs }));
+  } catch (e) {
+    console.warn("Failed to save favorites:", e);
+  }
 }
 
 function toggleFav(id, btnEl) {
-    let favs = getFavorites();
-    const idx = favs.indexOf(id);
-    const svg = btnEl ? btnEl.querySelector('svg') : null;
+  let favs = getFavorites();
+  const idx = favs.indexOf(id);
+  const svg = btnEl ? btnEl.querySelector("svg") : null;
 
-    if (idx === -1) {
-        favs.push(id);
-        if (btnEl) {
-            btnEl.classList.add('active');
-            btnEl.style.color = '#f43f5e';
-            btnEl.style.background = 'rgba(244, 63, 94, 0.12)';
-            btnEl.style.borderColor = 'rgba(244, 63, 94, 0.3)';
-            if (svg) svg.setAttribute('fill', 'currentColor');
-            if (typeof gsap !== 'undefined') {
-                gsap.fromTo(btnEl, { scale: 1.6 }, { scale: 1, duration: 0.5, ease: 'back.out(2)' });
-            }
-        }
-    } else {
-        favs.splice(idx, 1);
-        if (btnEl) {
-            btnEl.classList.remove('active');
-            btnEl.style.color = '#94a3b8';
-            btnEl.style.background = 'rgba(255, 255, 255, 0.7)';
-            btnEl.style.borderColor = 'rgba(255, 255, 255, 0.9)';
-            if (svg) svg.setAttribute('fill', 'none');
-        }
+  if (idx === -1) {
+    favs.push(id);
+    if (btnEl) {
+      btnEl.classList.add("active");
+      btnEl.style.color = "#f43f5e";
+      btnEl.style.background = "rgba(244, 63, 94, 0.12)";
+      btnEl.style.borderColor = "rgba(244, 63, 94, 0.3)";
+      if (svg) svg.setAttribute("fill", "currentColor");
+      if (typeof gsap !== "undefined") {
+        gsap.fromTo(
+          btnEl,
+          { scale: 1.6 },
+          { scale: 1, duration: 0.5, ease: "back.out(2)" },
+        );
+      }
     }
-    saveFavorites(favs);
+  } else {
+    favs.splice(idx, 1);
+    if (btnEl) {
+      btnEl.classList.remove("active");
+      btnEl.style.color = "#94a3b8";
+      btnEl.style.background = "rgba(255, 255, 255, 0.7)";
+      btnEl.style.borderColor = "rgba(255, 255, 255, 0.9)";
+      if (svg) svg.setAttribute("fill", "none");
+    }
+  }
+  saveFavorites(favs);
 }
 
 // Map each study section to its respective completion store
 const SECTION_STORE_MAP = {
-    chapters: 'soCompletedLectures',
-    quizzes: 'soCompletedQuizzes',
-    sections: 'soCompletedSections',
-    summaries: 'soCompletedSummaries',
-    qa: 'soCompletedQA',
-    finalReview: 'soCompletedFinalReview'
+  chapters: "soCompletedLectures",
+  quizzes: "soCompletedQuizzes",
+  sections: "soCompletedSections",
+  summaries: "soCompletedSummaries",
+  qa: "soCompletedQA",
+  finalReview: "soCompletedFinalReview",
 };
 
 // Default section data shown when a subject has no custom content for that section
 const DEFAULT_SECTION_DATA = {
-    chapters: [
+  chapters: [
+    {
+      num: 1,
+      title: "Introduction & Basic Concepts",
+      time: "2h 15m",
+      weeks: [
         {
-            num: 1, title: "Introduction & Basic Concepts", time: "2h 15m",
-            weeks: [
-                {
-                    num: 1,
-                    title: "",
-                    lectures: [
-                        // { id: 101, title: "Overview", type: "pdf", url: "" },
-                        // { id: 102, title: "First Principles", type: "pdf", url: "" }
-                    ]
-                }
-            ]
+          num: 1,
+          title: "",
+          lectures: [
+            // { id: 101, title: "Overview", type: "pdf", url: "" },
+            // { id: 102, title: "First Principles", type: "pdf", url: "" }
+          ],
         },
+      ],
+    },
+    {
+      num: 2,
+      title: "The Core Framework",
+      time: "3h 40m",
+      weeks: [
         {
-            num: 2, title: "The Core Framework", time: "3h 40m",
-            weeks: [
-                {
-                    num: 1,
-                    title: "",
-                    lectures: [
-                        // { id: 201, title: "Lec 3: Deep Dive into Core", type: "video", url: "materials/dummy.mp4" },
-                        // { id: 202, title: "Lec 4: Review Questions", type: "pdf", url: "" }
-                    ]
-                }
-            ]
-        }
-    ],
-    quizzes: [
-        {
-            num: 1, title: "Quiz Set 1", time: "2h 15m",
-            weeks: [
-                {
-                    num: 1,
-                    title: "",
-                    lectures: [
-                        // { id: 1001, title: "Overview", type: "pdf", url: "" },
-                        // { id: 1002, title: "Quiz 2: First Principles", type: "pdf", url: "" }
-                    ]
-                }
-            ]
+          num: 1,
+          title: "",
+          lectures: [
+            // { id: 201, title: "Lec 3: Deep Dive into Core", type: "video", url: "materials/dummy.mp4" },
+            // { id: 202, title: "Lec 4: Review Questions", type: "pdf", url: "" }
+          ],
         },
+      ],
+    },
+  ],
+  quizzes: [
+    {
+      num: 1,
+      title: "Quiz Set 1",
+      time: "2h 15m",
+      weeks: [
         {
-            num: 2, title: "Quiz Set 2", time: "3h 40m",
-            weeks: [
-                {
-                    num: 1,
-                    title: "",
-                    lectures: [
-                        // { id: 1003, title: "Quiz 3: Deep Dive into Core", type: "video", url: "materials/dummy.mp4" },
-                        // { id: 1004, title: "Quiz 4: Review Questions", type: "pdf", url: "" }
-                    ]
-                }
-            ]
-        }
-    ],
-    sections: [
-        {
-            num: 1, title: "Section Set 1", time: "2h 15m",
-            weeks: [
-                {
-                    num: 1,
-                    title: "",
-                    lectures: [
-                        // { id: 2001, title: "Overview", type: "pdf", url: "" },
-                        // { id: 2002, title: "Section 2: First Principles", type: "pdf", url: "" }
-                    ]
-                }
-            ]
+          num: 1,
+          title: "",
+          lectures: [
+            // { id: 1001, title: "Overview", type: "pdf", url: "" },
+            // { id: 1002, title: "Quiz 2: First Principles", type: "pdf", url: "" }
+          ],
         },
+      ],
+    },
+    {
+      num: 2,
+      title: "Quiz Set 2",
+      time: "3h 40m",
+      weeks: [
         {
-            num: 2, title: "Section Set 2", time: "3h 40m",
-            weeks: [
-                {
-                    num: 1,
-                    title: "",
-                    lectures: [
-                        // { id: 2003, title: "Section 3: Deep Dive into Core", type: "video", url: "materials/dummy.mp4" },
-                        // { id: 2004, title: "Section 4: Review Questions", type: "pdf", url: "" }
-                    ]
-                }
-            ]
-        }
-    ],
-    summaries: [
+          num: 1,
+          title: "",
+          lectures: [
+            // { id: 1003, title: "Quiz 3: Deep Dive into Core", type: "video", url: "materials/dummy.mp4" },
+            // { id: 1004, title: "Quiz 4: Review Questions", type: "pdf", url: "" }
+          ],
+        },
+      ],
+    },
+  ],
+  sections: [
+    {
+      num: 1,
+      title: "Section Set 1",
+      time: "2h 15m",
+      weeks: [
         {
-            num: 1, title: "Summaries - Part One", time: "30m",
-            weeks: [
-                {
-                    num: 1,
-                    title: "",
-                    lectures: [
-                        // { id: 3001, title: "Summary 1: Basics", type: "pdf", url: "" },
-                        // { id: 3002, title: "Summary 2: Core Concepts", type: "pdf", url: "" }
-                    ]
-                }
-            ]
-        }
-    ],
-    qa: [
+          num: 1,
+          title: "",
+          lectures: [
+            // { id: 2001, title: "Overview", type: "pdf", url: "" },
+            // { id: 2002, title: "Section 2: First Principles", type: "pdf", url: "" }
+          ],
+        },
+      ],
+    },
+    {
+      num: 2,
+      title: "Section Set 2",
+      time: "3h 40m",
+      weeks: [
         {
-            num: 1, title: "Q&A - Part One", time: "",
-            weeks: [
-                {
-                    num: 1,
-                    title: "",
-                    lectures: [
-                        // { id: 4001, title: "Q&A 1: Basics", type: "pdf", url: "" },
-                        // { id: 4002, title: "Q&A 2: Core Concepts", type: "pdf", url: "" }
-                    ]
-                }
-            ]
-        }
-    ],
-    finalReview: [
+          num: 1,
+          title: "",
+          lectures: [
+            // { id: 2003, title: "Section 3: Deep Dive into Core", type: "video", url: "materials/dummy.mp4" },
+            // { id: 2004, title: "Section 4: Review Questions", type: "pdf", url: "" }
+          ],
+        },
+      ],
+    },
+  ],
+  summaries: [
+    {
+      num: 1,
+      title: "Summaries - Part One",
+      time: "30m",
+      weeks: [
         {
-            num: 1, title: "Final Review", time: "",
-            weeks: [
-                {
-                    num: 1,
-                    title: "",
-                    lectures: [
-                        // { id: 5001, title: "Review 1", type: "pdf", url: "" }
-                    ]
-                }
-            ]
-        }
-    ]
+          num: 1,
+          title: "",
+          lectures: [
+            // { id: 3001, title: "Summary 1: Basics", type: "pdf", url: "" },
+            // { id: 3002, title: "Summary 2: Core Concepts", type: "pdf", url: "" }
+          ],
+        },
+      ],
+    },
+  ],
+  qa: [
+    {
+      num: 1,
+      title: "Q&A - Part One",
+      time: "",
+      weeks: [
+        {
+          num: 1,
+          title: "",
+          lectures: [
+            // { id: 4001, title: "Q&A 1: Basics", type: "pdf", url: "" },
+            // { id: 4002, title: "Q&A 2: Core Concepts", type: "pdf", url: "" }
+          ],
+        },
+      ],
+    },
+  ],
+  finalReview: [
+    {
+      num: 1,
+      title: "Final Review",
+      time: "",
+      weeks: [
+        {
+          num: 1,
+          title: "",
+          lectures: [
+            // { id: 5001, title: "Review 1", type: "pdf", url: "" }
+          ],
+        },
+      ],
+    },
+  ],
 };
 
 // Fallback alias for backward compatibility
@@ -761,106 +964,135 @@ const DEFAULT_CHAPTERS = DEFAULT_SECTION_DATA.chapters;
 // WEEKS SUPPORT: Normalize chapter data to ensure weeks structure
 // =========================================================
 function normalizeChapterData(ch) {
-    if (!ch) return ch;
-    const cloned = { ...ch };
-    if (!Array.isArray(cloned.weeks) || cloned.weeks.length === 0) {
-        if (Array.isArray(cloned.lectures)) {
-            cloned.weeks = [
-                {
-                    num: 1,
-                    title: "",
-                    lectures: cloned.lectures
-                }
-            ];
-        } else {
-            cloned.weeks = [];
-        }
+  if (!ch) return ch;
+  const cloned = { ...ch };
+  if (!Array.isArray(cloned.weeks) || cloned.weeks.length === 0) {
+    if (Array.isArray(cloned.lectures)) {
+      cloned.weeks = [
+        {
+          num: 1,
+          title: "",
+          lectures: cloned.lectures,
+        },
+      ];
     } else {
-        cloned.weeks = cloned.weeks.map((w, idx) => ({
-            ...w,
-            num: w.num !== undefined ? w.num : (idx + 1),
-            title: w.title || "",
-            lectures: Array.isArray(w.lectures) ? w.lectures : []
-        }));
+      cloned.weeks = [];
     }
-    // Flatten lectures onto chapter for backward compatibility
-    cloned.lectures = cloned.weeks.flatMap(w => w.lectures || []);
-    return cloned;
+  } else {
+    cloned.weeks = cloned.weeks.map((w, idx) => ({
+      ...w,
+      num: w.num !== undefined ? w.num : idx + 1,
+      title: w.title || "",
+      lectures: Array.isArray(w.lectures) ? w.lectures : [],
+    }));
+  }
+  // Flatten lectures onto chapter for backward compatibility
+  cloned.lectures = cloned.weeks.flatMap((w) => w.lectures || []);
+  return cloned;
 }
 
 function getSubjectSectionData(subject, sectionKey) {
-    let raw = [];
-    if (subject && subject.content && subject.content[sectionKey] && subject.content[sectionKey].length > 0) {
-        raw = subject.content[sectionKey];
-    } else {
-        raw = DEFAULT_SECTION_DATA[sectionKey] || [];
-    }
-    return raw.map(normalizeChapterData);
+  let raw = [];
+  if (
+    subject &&
+    subject.content &&
+    subject.content[sectionKey] &&
+    subject.content[sectionKey].length > 0
+  ) {
+    raw = subject.content[sectionKey];
+  } else {
+    raw = DEFAULT_SECTION_DATA[sectionKey] || [];
+  }
+  return raw.map(normalizeChapterData);
 }
 
 function getSubjectProgress(item) {
-    if (!item) return 0;
+  if (!item) return 0;
 
-    let totalLectures = 0;
-    let doneLectures = 0;
-    const sid = item.id;
+  let totalLectures = 0;
+  let doneLectures = 0;
+  const sid = item.id;
 
-    const countLectures = (ch, completedStore, sec) => {
-        const norm = normalizeChapterData(ch);
-        norm.lectures.forEach(lec => {
-            totalLectures++;
-            const key = sid + '_' + lec.id;
-            if (completedStore[key]) {
-                doneLectures++;
-            } else if (sec === 'summaries' && completedStore[sid + '_101'] && lec.id === 3001) {
-                doneLectures++;
-            } else if (sec === 'qa' && completedStore[sid + '_101'] && lec.id === 4001) {
-                doneLectures++;
-            }
-        });
-    };
+  const countLectures = (ch, completedStore, sec) => {
+    const norm = normalizeChapterData(ch);
+    norm.lectures.forEach((lec) => {
+      totalLectures++;
+      const key = sid + "_" + lec.id;
+      if (completedStore[key]) {
+        doneLectures++;
+      } else if (
+        sec === "summaries" &&
+        completedStore[sid + "_101"] &&
+        lec.id === 3001
+      ) {
+        doneLectures++;
+      } else if (
+        sec === "qa" &&
+        completedStore[sid + "_101"] &&
+        lec.id === 4001
+      ) {
+        doneLectures++;
+      }
+    });
+  };
 
-    if (item.content) {
-        const sections = ['chapters', 'quizzes', 'sections', 'summaries', 'qa', 'finalReview'];
-        sections.forEach(sec => {
-            if (!item.content[sec]) return;
-            const storeKey = SECTION_STORE_MAP[sec] || 'soCompletedLectures';
-            const completedStore = JSON.parse(localStorage.getItem(storeKey) || '{}');
+  if (item.content) {
+    const sections = [
+      "chapters",
+      "quizzes",
+      "sections",
+      "summaries",
+      "qa",
+      "finalReview",
+    ];
+    sections.forEach((sec) => {
+      if (!item.content[sec]) return;
+      const storeKey = SECTION_STORE_MAP[sec] || "soCompletedLectures";
+      const completedStore = JSON.parse(localStorage.getItem(storeKey) || "{}");
 
-            item.content[sec].forEach(ch => {
-                countLectures(ch, completedStore, sec);
-            });
-        });
-    } else {
-        const completedStore = JSON.parse(localStorage.getItem('soCompletedLectures') || '{}');
-        DEFAULT_CHAPTERS.forEach(ch => {
-            countLectures(ch, completedStore, 'chapters');
-        });
-    }
+      item.content[sec].forEach((ch) => {
+        countLectures(ch, completedStore, sec);
+      });
+    });
+  } else {
+    const completedStore = JSON.parse(
+      localStorage.getItem("soCompletedLectures") || "{}",
+    );
+    DEFAULT_CHAPTERS.forEach((ch) => {
+      countLectures(ch, completedStore, "chapters");
+    });
+  }
 
-    if (totalLectures === 0) return 0;
-    return Math.round((doneLectures / totalLectures) * 100);
+  if (totalLectures === 0) return 0;
+  return Math.round((doneLectures / totalLectures) * 100);
 }
 
 function getSubjectModulesCount(item) {
-    if (!item) return 0;
-    if (item.content) {
-        const sections = ['chapters', 'quizzes', 'sections', 'summaries', 'qa', 'finalReview'];
-        let total = 0;
-        sections.forEach(sec => {
-            if (item.content[sec]) total += item.content[sec].length;
-        });
-        return total > 0 ? total : DEFAULT_CHAPTERS.length;
-    }
-    return DEFAULT_CHAPTERS.length;
+  if (!item) return 0;
+  if (item.content) {
+    const sections = [
+      "chapters",
+      "quizzes",
+      "sections",
+      "summaries",
+      "qa",
+      "finalReview",
+    ];
+    let total = 0;
+    sections.forEach((sec) => {
+      if (item.content[sec]) total += item.content[sec].length;
+    });
+    return total > 0 ? total : DEFAULT_CHAPTERS.length;
+  }
+  return DEFAULT_CHAPTERS.length;
 }
 
 function materialCardHTML(item, isFav, isPinned = false) {
-    const progress = getSubjectProgress(item);
-    const modulesFromContent = getSubjectModulesCount(item);
-    const chaptersCount = modulesFromContent;
+  const progress = getSubjectProgress(item);
+  const modulesFromContent = getSubjectModulesCount(item);
+  const chaptersCount = modulesFromContent;
 
-    return `
+  return `
     <a href="subject.html?id=${item.id}" class="material-card group" style="text-decoration: none; position: relative; display: flex; flex-direction: column; overflow: hidden; background: #ffffff; border-radius: 24px; padding: 28px; box-shadow: 0 10px 40px -10px ${item.accent}15; border: 1px solid rgba(0,0,0,0.03); transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); isolation: isolate; outline: none; margin-bottom: 24px;">
 
         <!-- Background glowing orbs -->
@@ -869,15 +1101,15 @@ function materialCardHTML(item, isFav, isPinned = false) {
 
         <!-- Action Buttons (floating top-right) -->
         <div style="position: absolute; top: 20px; right: 20px; display: flex; gap: 8px; z-index: 10;">
-            <button class="action-btn pin-btn ${isPinned ? 'active' : ''}" data-id="${item.id}" title="${isPinned ? 'Unpin' : 'Pin to Top'}"
-                style="width: 34px; height: 34px; border-radius: 12px; background: ${isPinned ? item.color : 'rgba(255,255,255,0.7)'}; backdrop-filter: blur(8px); border: 1px solid ${isPinned ? item.accent + '30' : 'rgba(255,255,255,0.9)'}; color: ${isPinned ? item.accent : '#94a3b8'}; display: flex; align-items: center; justify-content: center; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-                <svg class="w-4 h-4" fill="${isPinned ? 'currentColor' : 'none'}" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <button class="action-btn pin-btn ${isPinned ? "active" : ""}" data-id="${item.id}" title="${isPinned ? "Unpin" : "Pin to Top"}"
+                style="width: 34px; height: 34px; border-radius: 12px; background: ${isPinned ? item.color : "rgba(255,255,255,0.7)"}; backdrop-filter: blur(8px); border: 1px solid ${isPinned ? item.accent + "30" : "rgba(255,255,255,0.9)"}; color: ${isPinned ? item.accent : "#94a3b8"}; display: flex; align-items: center; justify-content: center; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                <svg class="w-4 h-4" fill="${isPinned ? "currentColor" : "none"}" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/>
                 </svg>
             </button>
-            <button class="action-btn fav-btn ${isFav ? 'active' : ''}" data-id="${item.id}" title="Save to Favorites"
-                style="position: relative; width: 34px; height: 34px; border-radius: 12px; background: ${isFav ? 'rgba(244,63,94,0.12)' : 'rgba(255,255,255,0.7)'}; backdrop-filter: blur(8px); border: 1px solid ${isFav ? 'rgba(244,63,94,0.3)' : 'rgba(255,255,255,0.9)'}; color: ${isFav ? '#f43f5e' : '#94a3b8'}; display: flex; align-items: center; justify-content: center; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-                <svg class="w-4 h-4" fill="${isFav ? 'currentColor' : 'none'}" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <button class="action-btn fav-btn ${isFav ? "active" : ""}" data-id="${item.id}" title="Save to Favorites"
+                style="position: relative; width: 34px; height: 34px; border-radius: 12px; background: ${isFav ? "rgba(244,63,94,0.12)" : "rgba(255,255,255,0.7)"}; backdrop-filter: blur(8px); border: 1px solid ${isFav ? "rgba(244,63,94,0.3)" : "rgba(255,255,255,0.9)"}; color: ${isFav ? "#f43f5e" : "#94a3b8"}; display: flex; align-items: center; justify-content: center; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                <svg class="w-4 h-4" fill="${isFav ? "currentColor" : "none"}" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                 </svg>
             </button>
@@ -915,15 +1147,15 @@ function materialCardHTML(item, isFav, isPinned = false) {
 }
 
 function essayCardHTML(e, isFav) {
-    return `
+  return `
     <div class="essay-card group">
         <div class="card-accent" style="background: linear-gradient(90deg, ${e.tagText}, ${e.tagColor});"></div>
         <div class="card-glow" style="background: radial-gradient(circle, ${e.tagColor} 0%, transparent 70%);"></div>
 
         <div class="card-inner">
-            <button class="fav-btn ${isFav ? 'active' : ''}" data-id="${e.id}" title="Save to Favorites"
-                style="position: absolute; top: 16px; right: 16px; width: 34px; height: 34px; border-radius: 12px; background: ${isFav ? 'rgba(244,63,94,0.12)' : 'rgba(255,255,255,0.7)'}; backdrop-filter: blur(8px); border: 1px solid ${isFav ? 'rgba(244,63,94,0.3)' : 'rgba(255,255,255,0.9)'}; color: ${isFav ? '#f43f5e' : '#94a3b8'}; display: flex; align-items: center; justify-content: center; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-                <svg class="w-4 h-4" fill="${isFav ? 'currentColor' : 'none'}" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <button class="fav-btn ${isFav ? "active" : ""}" data-id="${e.id}" title="Save to Favorites"
+                style="position: absolute; top: 16px; right: 16px; width: 34px; height: 34px; border-radius: 12px; background: ${isFav ? "rgba(244,63,94,0.12)" : "rgba(255,255,255,0.7)"}; backdrop-filter: blur(8px); border: 1px solid ${isFav ? "rgba(244,63,94,0.3)" : "rgba(255,255,255,0.9)"}; color: ${isFav ? "#f43f5e" : "#94a3b8"}; display: flex; align-items: center; justify-content: center; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+                <svg class="w-4 h-4" fill="${isFav ? "currentColor" : "none"}" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                 </svg>
             </button>
@@ -945,173 +1177,210 @@ function essayCardHTML(e, isFav) {
 }
 
 function bindActionButtons(container) {
-    container.querySelectorAll('.fav-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            e.preventDefault();
-            toggleFav(btn.dataset.id, btn);
-        });
+  container.querySelectorAll(".fav-btn").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      toggleFav(btn.dataset.id, btn);
     });
+  });
 
-    container.querySelectorAll('.pin-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            e.preventDefault();
-            togglePin(btn.dataset.id, btn);
-        });
+  container.querySelectorAll(".pin-btn").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      togglePin(btn.dataset.id, btn);
     });
+  });
 }
 
 function getPinned() {
-    try {
-        return JSON.parse(localStorage.getItem('soPinned') || '[]');
-    } catch {
-        return [];
-    }
+  try {
+    return JSON.parse(localStorage.getItem("soPinned") || "[]");
+  } catch {
+    return [];
+  }
 }
 
 function savePinned(pinned) {
-    try {
-        localStorage.setItem('soPinned', JSON.stringify(pinned));
-        window.dispatchEvent(new CustomEvent('so-pin-changed', { detail: pinned }));
-    } catch (e) {
-        console.warn('Failed to save pinned:', e);
-    }
+  try {
+    localStorage.setItem("soPinned", JSON.stringify(pinned));
+    window.dispatchEvent(new CustomEvent("so-pin-changed", { detail: pinned }));
+  } catch (e) {
+    console.warn("Failed to save pinned:", e);
+  }
 }
 
 function togglePin(id, btnEl) {
-    let pinned = getPinned();
-    const idx = pinned.indexOf(id);
+  let pinned = getPinned();
+  const idx = pinned.indexOf(id);
 
-    // Find the item color data to restyle the button
-    let itemAccent = '#0EA5E9', itemColor = '#F0F9FF';
-    const catalog = Array.isArray(MATERIALS) ? MATERIALS : Object.values(MATERIALS).flat();
-    const found = catalog.find(g => g && g.id === id);
-    if (found) {
-        itemAccent = found.accent || '#0EA5E9';
-        itemColor = found.color || '#F0F9FF';
-    }
+  // Find the item color data to restyle the button
+  let itemAccent = "#0EA5E9",
+    itemColor = "#F0F9FF";
+  const catalog = Array.isArray(MATERIALS)
+    ? MATERIALS
+    : Object.values(MATERIALS).flat();
+  const found = catalog.find((g) => g && g.id === id);
+  if (found) {
+    itemAccent = found.accent || "#0EA5E9";
+    itemColor = found.color || "#F0F9FF";
+  }
 
-    if (idx === -1) {
-        pinned.push(id);
-        if (btnEl) {
-            btnEl.classList.add('active');
-            btnEl.title = "Unpin";
-            btnEl.style.color = itemAccent;
-            btnEl.style.background = itemColor;
-            btnEl.style.borderColor = itemAccent + '40';
-            if (typeof gsap !== 'undefined') gsap.fromTo(btnEl, { scale: 1.6 }, { scale: 1, duration: 0.5, ease: 'back.out(2)' });
-        }
-    } else {
-        pinned.splice(idx, 1);
-        if (btnEl) {
-            btnEl.classList.remove('active');
-            btnEl.title = "Pin to Top";
-            btnEl.style.color = '';
-            btnEl.style.background = '';
-            btnEl.style.borderColor = '';
-        }
+  if (idx === -1) {
+    pinned.push(id);
+    if (btnEl) {
+      btnEl.classList.add("active");
+      btnEl.title = "Unpin";
+      btnEl.style.color = itemAccent;
+      btnEl.style.background = itemColor;
+      btnEl.style.borderColor = itemAccent + "40";
+      if (typeof gsap !== "undefined")
+        gsap.fromTo(
+          btnEl,
+          { scale: 1.6 },
+          { scale: 1, duration: 0.5, ease: "back.out(2)" },
+        );
     }
-    savePinned(pinned);
+  } else {
+    pinned.splice(idx, 1);
+    if (btnEl) {
+      btnEl.classList.remove("active");
+      btnEl.title = "Pin to Top";
+      btnEl.style.color = "";
+      btnEl.style.background = "";
+      btnEl.style.borderColor = "";
+    }
+  }
+  savePinned(pinned);
 }
 
 // ── Global Helper: Toggle PDF in Offline Library ─────────────
-window.togglePdfLibrary = async function (event, btn, rawTitle, rawUrl, subjectId, lecId) {
-    if (event) {
-        event.stopPropagation();
-        event.preventDefault();
-    }
+window.togglePdfLibrary = async function (
+  event,
+  btn,
+  rawTitle,
+  rawUrl,
+  subjectId,
+  lecId,
+) {
+  if (event) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
 
-    const title = decodeURIComponent(rawTitle || 'Document');
-    const url = decodeURIComponent(rawUrl || '');
-    const sid = subjectId || '';
-    const lid = lecId ? String(lecId) : '';
+  const title = decodeURIComponent(rawTitle || "Document");
+  const url = decodeURIComponent(rawUrl || "");
+  const sid = subjectId || "";
+  const lid = lecId ? String(lecId) : "";
 
-    try {
-        let library = JSON.parse(localStorage.getItem('so_offline_library') || '[]');
+  try {
+    let library = JSON.parse(
+      localStorage.getItem("so_offline_library") || "[]",
+    );
 
-        // Find existing by subject+lec ID OR by unique title/url match
-        const existingIndex = library.findIndex(item =>
-            (sid && lid && item.subjectId === sid && String(item.lecId) === lid) ||
-            (url && item.url === url) ||
-            (title && item.title === title) ||
-            (item.id === `${sid}_${lid}`)
-        );
+    // Find existing by subject+lec ID OR by unique title/url match
+    const existingIndex = library.findIndex(
+      (item) =>
+        (sid && lid && item.subjectId === sid && String(item.lecId) === lid) ||
+        (url && item.url === url) ||
+        (title && item.title === title) ||
+        item.id === `${sid}_${lid}`,
+    );
 
-        const isCurrentlyInLib = existingIndex !== -1;
+    const isCurrentlyInLib = existingIndex !== -1;
 
-        if (!isCurrentlyInLib) {
-            // ── ADD TO LIBRARY ─────────────────────────────
-            library.push({
-                id: `${sid}_${lid}_${Date.now()}`,
-                subjectId: sid,
-                lecId: lid,
-                title: title,
-                type: 'pdf',
-                url: url,
-                dateAdded: new Date().toISOString(),
-                isRead: false
-            });
-            localStorage.setItem('so_offline_library', JSON.stringify(library));
-            window.dispatchEvent(new CustomEvent('so-lib-changed', { detail: library }));
+    if (!isCurrentlyInLib) {
+      // ── ADD TO LIBRARY ─────────────────────────────
+      library.push({
+        id: `${sid}_${lid}_${Date.now()}`,
+        subjectId: sid,
+        lecId: lid,
+        title: title,
+        type: "pdf",
+        url: url,
+        dateAdded: new Date().toISOString(),
+        isRead: false,
+      });
+      localStorage.setItem("so_offline_library", JSON.stringify(library));
+      window.dispatchEvent(
+        new CustomEvent("so-lib-changed", { detail: library }),
+      );
 
-            // Cache offline if supported
-            if ('caches' in window && url) {
-                try {
-                    const cache = await caches.open('offline-materials');
-                    await cache.add(url);
-                } catch (e) {
-                    console.log('Offline cache skipped:', e);
-                }
-            }
+      // Cache offline if supported
+      if ("caches" in window && url) {
+        try {
+          const cache = await caches.open("offline-materials");
+          await cache.add(url);
+        } catch (e) {
+          console.log("Offline cache skipped:", e);
+        }
+      }
 
-            // 1. Show Green Checkmark for exactly 1 second (1000ms)
-            if (btn) {
-                btn.classList.remove('in-library', 'in-lib');
-                btn.classList.add('saved-success', 'lib-saved-flash');
-                btn.title = "Added to Library";
+      // 1. Show Green Checkmark for exactly 1 second (1000ms)
+      if (btn) {
+        btn.classList.remove("in-library", "in-lib");
+        btn.classList.add("saved-success", "lib-saved-flash");
+        btn.title = "Added to Library";
 
-                if (typeof gsap !== 'undefined') {
-                    gsap.fromTo(btn, { scale: 0.9 }, { scale: 1.15, duration: 0.25, ease: 'back.out(2)' });
-                }
-
-                setTimeout(() => {
-                    btn.classList.remove('saved-success', 'lib-saved-flash');
-                    btn.classList.add('in-library', 'in-lib');
-                    btn.title = "Remove from Library";
-                    if (typeof gsap !== 'undefined') {
-                        gsap.fromTo(btn, { scale: 1.1 }, { scale: 1, duration: 0.25, ease: 'power2.out' });
-                    }
-                }, 1000);
-            }
-
-        } else {
-            // ── REMOVE FROM LIBRARY ────────────────────────
-            const removedItem = library.splice(existingIndex, 1)[0];
-            localStorage.setItem('so_offline_library', JSON.stringify(library));
-            window.dispatchEvent(new CustomEvent('so-lib-changed', { detail: library }));
-
-            if ('caches' in window && removedItem && removedItem.url) {
-                try {
-                    const cache = await caches.open('offline-materials');
-                    await cache.delete(removedItem.url);
-                } catch (e) { }
-            }
-
-            // Transform back to Plus (+) state
-            if (btn) {
-                btn.classList.remove('saved-success', 'in-library', 'in-lib', 'lib-saved-flash');
-                btn.title = "Add to Library";
-
-                if (typeof gsap !== 'undefined') {
-                    gsap.fromTo(btn, { scale: 0.9 }, { scale: 1.15, duration: 0.25, ease: 'back.out(2)' });
-                }
-            }
+        if (typeof gsap !== "undefined") {
+          gsap.fromTo(
+            btn,
+            { scale: 0.9 },
+            { scale: 1.15, duration: 0.25, ease: "back.out(2)" },
+          );
         }
 
-    } catch (err) {
-        console.error('Error toggling library:', err);
+        setTimeout(() => {
+          btn.classList.remove("saved-success", "lib-saved-flash");
+          btn.classList.add("in-library", "in-lib");
+          btn.title = "Remove from Library";
+          if (typeof gsap !== "undefined") {
+            gsap.fromTo(
+              btn,
+              { scale: 1.1 },
+              { scale: 1, duration: 0.25, ease: "power2.out" },
+            );
+          }
+        }, 1000);
+      }
+    } else {
+      // ── REMOVE FROM LIBRARY ────────────────────────
+      const removedItem = library.splice(existingIndex, 1)[0];
+      localStorage.setItem("so_offline_library", JSON.stringify(library));
+      window.dispatchEvent(
+        new CustomEvent("so-lib-changed", { detail: library }),
+      );
+
+      if ("caches" in window && removedItem && removedItem.url) {
+        try {
+          const cache = await caches.open("offline-materials");
+          await cache.delete(removedItem.url);
+        } catch (e) {}
+      }
+
+      // Transform back to Plus (+) state
+      if (btn) {
+        btn.classList.remove(
+          "saved-success",
+          "in-library",
+          "in-lib",
+          "lib-saved-flash",
+        );
+        btn.title = "Add to Library";
+
+        if (typeof gsap !== "undefined") {
+          gsap.fromTo(
+            btn,
+            { scale: 0.9 },
+            { scale: 1.15, duration: 0.25, ease: "back.out(2)" },
+          );
+        }
+      }
     }
+  } catch (err) {
+    console.error("Error toggling library:", err);
+  }
 };
 
 window.addPdfToLibrary = window.togglePdfLibrary;
