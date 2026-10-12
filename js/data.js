@@ -152,6 +152,12 @@ const MATERIALS = [
                 {
                   id: 203,
                   title: "Lect2",
+                  type: "pdf",
+                  url: "materials/Pdfs/First Term/Stat/Ch1/week2/Lect2_Stat.pdf",
+                },
+                {
+                  id: 204,
+                  title: "Lect2",
                   type: "video",
                   url: "https://github.com/ahmedtamer206/subjects_online_2nd/releases/download/v1.0/Lect2_Dr.Mona.mp4",
                 },
