@@ -153,7 +153,7 @@ const MATERIALS = [
                   id: 203,
                   title: "Lect2",
                   type: "pdf",
-                  url: "materials/Pdfs/First Term/Stat/Ch1/week2/Lect2_Stat.pdf",
+                  url: "/materials/Pdfs/First Term/Stat/Ch1/week2/Lect2_Stat.pdf",
                 },
                 {
                   id: 204,
