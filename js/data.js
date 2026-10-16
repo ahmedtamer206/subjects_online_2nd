@@ -281,10 +281,17 @@ const MATERIALS = [
       quizzes: [
         {
           num: 1,
-          title: "",
-          time: "",
+          title: "Part 1",
           weeks: [
-            { num: 1, title: "", lectures: [] },
+            { num: 1,
+               lectures: [
+              {
+                  id: 3001,
+                  title: "Quiz 1",
+                  type: "pdf",
+                  url: "materials/Pdfs/First Term/Public/Quizzes/Quiz 1.pdf",
+                },
+            ] },
             { num: 2, title: "", lectures: [] },
           ],
         },
