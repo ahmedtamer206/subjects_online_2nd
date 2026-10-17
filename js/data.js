@@ -469,13 +469,16 @@ const MATERIALS = [
       chapters: [
         {
           num: 1,
-          title: "",
-          time: "",
           weeks: [
             {
               num: 1,
-              title: "",
               lectures: [
+                {
+                  id: 501,
+                  title: "Lect1&2",
+                  type: "pdf",
+                  url: "materials/Pdfs/First Term/Eco/Lectures/Eco_lect_1_2.pdf",
+                },
                 {
                   id: 502,
                   title: "Lect1&2",
@@ -501,8 +504,7 @@ const MATERIALS = [
       quizzes: [
         {
           num: 1,
-          title: "",
-          time: "",
+          title: "Part1",
           weeks: [
             { num: 1, title: "", lectures: [] },
             { num: 2, title: "", lectures: [] },
